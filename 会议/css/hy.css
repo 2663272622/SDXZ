@@ -1,0 +1,66 @@
+*{margin:0;padding:0}
+li{list-style: none}
+body{
+    background-image: url("../imgs/bj.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+    padding:7rem;
+    color:#fff;
+    text-align: center
+}
+.Container{
+    width:60%;
+    margin:0 auto
+}
+/* 提示部分 */
+.hint{
+    margin-top:1.8rem
+}
+/* 提示消息 */
+.message{
+    margin-top:1.8rem;
+    padding: 4rem;
+    width:100%;
+    border:1px solid #5C6EB5;
+    box-shadow:0 0 4rem 1.5rem inset #5C6EB5;
+    border-radius: .6rem;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+.message>li:first-child{width:35%}
+.message>li:first-child>h3{
+    font-weight: 400;
+    font-size: 3rem;
+}
+.message>li:last-child{
+    width:60%;
+    line-height: 3rem;
+}
+.message>li:last-child>span{margin:0 1rem}
+
+.borderr{
+    position: absolute;
+    left:35%;
+    width:3px;height:100%;background:red;
+    display: none
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    width:60%;
+    margin:2rem auto
+}
+
+.btnContent{
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin:.3rem auto;
+    border-radius: 50%;
+    background:#60A9DE;
+    text-align: center;
+}
+
+.iconshipin,.iconliebiao,.iconhuiyi{font-size:1.5rem}

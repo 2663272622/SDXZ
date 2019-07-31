@@ -1,0 +1,179 @@
+*{
+    margin:0;padding:0;
+    font-display: "微软雅黑"
+}
+header{
+    color:#004081;
+    background:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    font-weight: 800;
+    font-size:1.2rem
+}
+.logo{width:14rem}
+.HeaderTime>p:first-child{font-size:1.5rem;}
+.HeaderTime>p:nth-child(2){margin-top: .7rem;}
+.headRight>div{
+    float:right;
+}
+.headRight::after{
+    content: "";
+    display: block;
+    clear: both
+}
+.sun{
+    border-right:1px solid #004081;
+    padding-right:1rem;
+    margin-right: 1rem;
+}
+.sun>img{width:1.8rem}
+.sun>span{font-size:2rem}
+/* 主体部分 */
+section{
+    background-image: url("../imgs/背景.png");
+    background-repeat:no-repeat;
+    background-size:100%;
+    text-align: center;
+    padding: 32px 0;
+}
+section>h3{
+    color:#fff;
+    height:3rem;
+    line-height: 3rem;
+    box-shadow: 0 0 0 0 #FFF
+}
+section>h3>b{
+    color:#FD3E30;
+}
+section>h3{background:#0D1C66}
+/* 楼层导视部分 */
+/* 段落标题 */
+.paragraphTitle{
+    padding: 30px;
+    margin-top: .7rem;
+    background-image: url(../imgs/组\ 9.png);
+    background-repeat: no-repeat;
+    background-position: 48% 50%;
+    color: #16BCEC;
+}
+
+.LCDS_details{
+    width: 70%;
+    margin:1rem auto;
+    background-image: url(../imgs/大楼.png);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: 47% 26%;
+    justify-content: space-between;
+}
+
+.LCDS_details li{
+    margin-top:1rem
+}
+/* LCDS_details可点击楼层部分 */
+.LCDS_details>ul>li{
+    display: flex
+}
+/* 楼层icon */
+.LCDS_tier{
+    background:#1D7C4E;
+    border:1px solid #16EF7C;
+    border-radius:50%;
+    width:2rem;
+    height:2rem;
+    text-align: center;
+    line-height: 2rem;
+    color:#fff;
+    font-weight: 500;
+    box-shadow:0px 0px 10px 1px inset #16EF7C;
+}
+/* 楼层文本 */
+.LCDS_text{
+    color:#fff;
+    margin:0 .6rem;
+    line-height: 2rem;
+    font-weight: 600
+}
+
+/* 会议指南部分样式 */
+.HYZN{
+    background-image: url(../imgs/timg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 86%;
+    padding: 1.5rem 0;
+}
+.HYZN_details{
+    color:#fff;
+    width:70%;
+    margin: 0 auto;
+    margin-top:1.5rem;
+    box-shadow:0px 0px 22px 17px inset #3386a996;
+    /* background-image: url("../imgs/timg.png") */
+}
+.HYZN_table{
+    display: flex;
+    list-style: none;
+    width:100%;
+    margin:0 auto;
+}
+.HYZN_table>li{
+    border-top:2px solid #2F3F64;
+    border-right:2px solid #2F3F64;
+    padding:1rem;
+}
+.HYZN_table>li:first-child{
+    border-left:3px solid #184D75;width:25%;    
+}
+.HYZN_table>li:nth-child(2){width:35%}
+.HYZN_table>li:nth-child(3){width:15%}
+.HYZN_table>li:last-child{
+    border-right:3px solid #184D75;width:25%
+
+}
+
+/* .HYZN_table:first-child>li:first-child{ */
+    /* box-shadow: -10px 0px 21px inset #184D75; */
+/* } */
+.HYZN_table:first-child>li{
+    border-top:3px solid #184D75;   
+    /* box-shadow: 0px 10px 21px inset #184D75; */
+}
+.HYZN_table:last-child>li{
+    border-bottom:3px solid #184D75;    
+    /* box-shadow: 0px -10px 21px inset #184D75; */
+}
+/* 会议指南部分button按钮 */
+.HYZN_btn{
+    margin:1.5rem auto; 
+    width:50%;
+    display: flex;
+    justify-content: space-around
+}
+.HYZN_btn>img{
+    width:30%;
+    height:20%;
+}
+
+/* 视频播放部分 */
+.video{
+    width:70%;
+    padding:1.5rem 0;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around
+}
+.videoFather{
+    position: relative;
+    width:45%;
+}
+.videoChild{
+    position: absolute;
+    top: 41%;
+    left: 41%;
+}
+/* 图片宽度百分百继承父元素 */
+.videoPlay{width:100%;border-radius:5px;}
